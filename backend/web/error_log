@@ -1,0 +1,1 @@
+[08-May-2019 16:44:56 Europe/Helsinki] PHP Fatal error:  Class 'yii\helpers\VarDumper' not found in /home/wlafulvp/dev.wotconsole.info/vendor/yiisoft/yii2/helpers/BaseHtml.php on line 0
