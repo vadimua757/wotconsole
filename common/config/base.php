@@ -36,7 +36,11 @@ $config = [
         ],
 
         'formatter' => [
-            'class' => yii\i18n\Formatter::class
+            'class' => yii\i18n\Formatter::class,
+            'locale' => 'ru', //ej. 'es-ES'
+           'thousandSeparator' => ' ',
+           'decimalSeparator' => ',',
+           'currencyCode' => 'UAH',
         ],
 
         'glide' => [

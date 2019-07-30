@@ -27,20 +27,20 @@ use yii\widgets\ListView;
         <div class="col-md-9">
 
 
-<!--            --><?php
-//            if ($dataProvider){
-//                echo ListView::widget([
-//                    'dataProvider' => $dataProvider,
-//                    'itemView' => '_pack',
-//                    'summary'=>'',
-//                    'options' => ['style' => 'display: flex;'],
-//                    'itemOptions' => [
-////                            'class' => 'btn button',
-//                            'style' => 'padding-right: 20px;'
-//                    ],
-//                ]);
-//            }
-//            ?>
+            <?php
+            if ($dataProvider){
+                echo ListView::widget([
+                    'dataProvider' => $dataProvider,
+                    'itemView' => '_pack',
+                    'summary'=>'',
+                    'options' => ['style' => 'display: flex;'],
+                    'itemOptions' => [
+//                            'class' => 'btn button',
+                            'style' => 'padding-right: 20px;'
+                    ],
+                ]);
+            }
+            ?>
         </div>
     </div>
     <hr>

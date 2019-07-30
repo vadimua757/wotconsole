@@ -1,10 +1,13 @@
 <?php
 
 use yii\helpers\Html;
-//use yii\grid\GridView;
+use yii\grid\GridView;
 use kartik\dynagrid\DynaGrid;
 use \common\models\Package;
 use yii\widgets\Pjax;
+use common\models\Tanks;
+use yii\helpers\ArrayHelper;
+
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\search\TanksSearch */
@@ -34,13 +37,35 @@ echo Yii::$app->session->getFlash('success');
         ],
 //         'nation',
         [
+
             'attribute' => 'nation',
             'format' => 'image',
+
             'value'=>function($data) {
                 $image = getNationImage($data->nation);
                 return $image;
             },
+            'filterType'=>'\kartik\select2\Select2',
+            'filter'=>ArrayHelper::map(Tanks::find()->orderBy('nation')->asArray()->all(), 'nation', 'nation'),
+            'filterWidgetOptions'=>[
+                'pluginOptions'=>['allowClear'=>true],
+            ],
+            'filterInputOptions'=>['placeholder'=>'Any nation'],
         ],
+        [
+            'attribute'=>'nation',
+            'vAlign'=>'middle',
+            'width'=>'250px',
+            'value'=>function ($model, $key, $index, $widget) {
+                return Html::a($model->author->name, '#', [
+                    'title'=>'View author detail',
+                    'onclick'=>'alert("This will open the author page.\n\nDisabled for this demo!")'
+                ]);
+            },
+
+            'format'=>'raw'
+        ],
+
          'next_tanks',
          'price_credit',
          'price_gold',
@@ -49,7 +74,20 @@ echo Yii::$app->session->getFlash('success');
          'short_name_ru',
          'tag',
          'tier',
-         'type',
+//         'type',
+        [
+
+            'attribute' => 'type',
+            'format' => 'raw',
+
+            'value'=>'type',
+            'filterType'=>'\kartik\select2\Select2',
+            'filter'=>ArrayHelper::map(Tanks::find()->orderBy('type')->asArray()->all(), 'type', 'type'),
+            'filterWidgetOptions'=>[
+                'pluginOptions'=>['allowClear'=>true],
+            ],
+            'filterInputOptions'=>['placeholder'=>'Any type'],
+        ],
         [
             'attribute' => 'images',
             'format' => 'image',

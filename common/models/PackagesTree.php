@@ -51,4 +51,28 @@ class PackagesTree extends \yii\db\ActiveRecord
             'type' => Yii::t('common', 'Type'),
         ];
     }
+
+    public static function buildTree($arr, $pidKey, $idKey = null)
+    {
+        $grouped = array();
+        foreach ($arr as $sub){
+            $grouped[$sub[$pidKey]][] = $sub;
+        }
+
+        $fnBuilder = function($siblings) use (&$fnBuilder, $grouped, $idKey) {
+            foreach ($siblings as $k => $sibling) {
+                $id = $sibling[$idKey];
+                if(isset($grouped[$id])) {
+                    $sibling['children'] = $fnBuilder($grouped[$id]);
+                }
+                $siblings[$k] = $sibling;
+            }
+
+            return $siblings;
+        };
+
+        $tree = $fnBuilder($grouped[0]);
+
+        return $tree;
+    }
 }

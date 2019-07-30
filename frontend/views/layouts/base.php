@@ -24,6 +24,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
             ],
         'items' => [
             ['label' => Yii::t('frontend', 'Tanks'), 'url' => ['/tanks/index']],
+            ['label' => Yii::t('frontend', 'Crew'), 'url' => ['/crew/index']],
             ['label' => Yii::t('frontend', 'About'), 'url' => ['/page/view', 'slug'=>'about']],
             ['label' => Yii::t('frontend', 'Articles'), 'url' => ['/article/index']],
             ['label' => Yii::t('frontend', 'Contact'), 'url' => ['/site/contact']],

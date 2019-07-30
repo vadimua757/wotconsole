@@ -6,11 +6,12 @@
  * @var $model common\models\Tanks
  */
 
+    $formatter = Yii::$app->formatter;
 
     $image_arr = unserialize($item['images']);
     $image = $image_arr['big_icon'];
-    $price_gold = "<img style=\"width:15px\" src=\"http://wxpcdn.gcdn.co/static/89e7685/portal/img/svg-icons/currency/gold.svg\" alt=\"\">" . $item['price_gold'];
-    $price_credit = "<img style=\"width:15px\" src=\"http://wxpcdn.gcdn.co/static/89e7685/portal/img/svg-icons/currency/silver.svg\" alt=\"\">" . $item['price_credit'];
+    $price_gold = "<img style=\"width:15px\" src=\"http://wxpcdn.gcdn.co/static/89e7685/portal/img/svg-icons/currency/gold.svg\" alt=\"\">" . $formatter->asInteger($item['price_gold']);
+    $price_credit = "<img style=\"width:15px\" src=\"http://wxpcdn.gcdn.co/static/89e7685/portal/img/svg-icons/currency/silver.svg\" alt=\"\">" . $formatter->asInteger($item['price_credit']);
     ?>
 
     <div class="thumbnail <?= $item['tag']?>" style="background-image: url(<?=$image?>); background-size: 80%;background-repeat: no-repeat; background-color: #080808ba">

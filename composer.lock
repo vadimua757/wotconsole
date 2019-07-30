@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12a67b3a9640bd2bdff6f6bc8b02684c",
+    "content-hash": "8a64a18611d8f600b715827861c5849d",
     "packages": [
         {
             "name": "2amigos/yii2-highcharts-widget",
@@ -321,6 +321,24 @@
             ]
         },
         {
+            "name": "bower-asset/desandro-matches-selector",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:desandro/matches-selector.git",
+                "reference": "42ee1cbab7469454d140bdab04d2ceed9c68b85e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/desandro/matches-selector/zipball/42ee1cbab7469454d140bdab04d2ceed9c68b85e",
+                "reference": "42ee1cbab7469454d140bdab04d2ceed9c68b85e"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "bower-asset/eonasdan-bootstrap-datetimepicker",
             "version": "4.17.47",
             "source": {
@@ -336,6 +354,63 @@
             "require": {
                 "bower-asset/jquery": ">=1.8.3",
                 "bower-asset/moment": ">=2.10.5"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/ev-emitter",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/metafizzy/ev-emitter.git",
+                "reference": "1baa3a03d8e07f665b0eb797661fcc2b0d2a5736"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/metafizzy/ev-emitter/zipball/1baa3a03d8e07f665b0eb797661fcc2b0d2a5736",
+                "reference": "1baa3a03d8e07f665b0eb797661fcc2b0d2a5736"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/fizzy-ui-utils",
+            "version": "v2.0.7",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:metafizzy/fizzy-ui-utils.git",
+                "reference": "72feb9fc3d6de25696291941121bb3ec2db8221e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/metafizzy/fizzy-ui-utils/zipball/72feb9fc3d6de25696291941121bb3ec2db8221e",
+                "reference": "72feb9fc3d6de25696291941121bb3ec2db8221e"
+            },
+            "require": {
+                "bower-asset/desandro-matches-selector": ">=2.0.0,<3.0.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/get-size",
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/desandro/get-size.git",
+                "reference": "6879e7f15b4b6e19ca392b6955edfa8d4aa6f787"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/desandro/get-size/zipball/6879e7f15b4b6e19ca392b6955edfa8d4aa6f787",
+                "reference": "6879e7f15b4b6e19ca392b6955edfa8d4aa6f787"
             },
             "type": "bower-asset",
             "license": [
@@ -365,12 +440,12 @@
             "version": "v5.0.14",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highcharts/highcharts-dist.git",
+                "url": "git@github.com:highslide-software/highcharts-release.git",
                 "reference": "4f89cf3f98a557a9512f7ba63f727998d21f3b79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/highcharts/highcharts-dist/zipball/4f89cf3f98a557a9512f7ba63f727998d21f3b79",
+                "url": "https://api.github.com/repos/highslide-software/highcharts-release/zipball/4f89cf3f98a557a9512f7ba63f727998d21f3b79",
                 "reference": "4f89cf3f98a557a9512f7ba63f727998d21f3b79"
             },
             "type": "bower-asset"
@@ -401,13 +476,35 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery-masonry",
+            "version": "v4.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/desandro/masonry.git",
+                "reference": "3b0883cf4a4a046896719b9cf282ea74be7ffecd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/desandro/masonry/zipball/3b0883cf4a4a046896719b9cf282ea74be7ffecd",
+                "reference": "3b0883cf4a4a046896719b9cf282ea74be7ffecd"
+            },
+            "require": {
+                "bower-asset/get-size": ">=2.0.2,<3.0.0",
+                "bower-asset/outlayer": ">=2.1.0,<3.0.0"
             },
             "type": "bower-asset",
             "license": [
@@ -440,13 +537,36 @@
             "version": "2.24.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moment/moment.git",
+                "url": "git@github.com:moment/moment.git",
                 "reference": "96d0d6791ab495859d09a868803d31a55c917de1"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/moment/moment/zipball/96d0d6791ab495859d09a868803d31a55c917de1",
                 "reference": "96d0d6791ab495859d09a868803d31a55c917de1"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/outlayer",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:metafizzy/outlayer.git",
+                "reference": "bf31c5748bf84fcc2c553d1199a6ecaf0ebd9878"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/metafizzy/outlayer/zipball/bf31c5748bf84fcc2c553d1199a6ecaf0ebd9878",
+                "reference": "bf31c5748bf84fcc2c553d1199a6ecaf0ebd9878"
+            },
+            "require": {
+                "bower-asset/ev-emitter": ">=1.0.0,<2.0.0",
+                "bower-asset/fizzy-ui-utils": ">=2.0.0,<3.0.0",
+                "bower-asset/get-size": ">=2.0.2,<3.0.0"
             },
             "type": "bower-asset",
             "license": [
@@ -563,6 +683,64 @@
                 "markdown-extra"
             ],
             "time": "2018-03-26T11:24:36+00:00"
+        },
+        {
+            "name": "circulon/yii2-columnlistview",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/circulon/yii2-columnlistview.git",
+                "reference": "06217130843005d96be2a69727f73cb37ccebe5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/circulon/yii2-columnlistview/zipball/06217130843005d96be2a69727f73cb37ccebe5c",
+                "reference": "06217130843005d96be2a69727f73cb37ccebe5c",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                },
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "circulon\\widgets\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kieren Eaton",
+                    "email": "circledev@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Responsive columnar List View for Yii 2.x",
+            "homepage": "https://github.com/circulon/yii2-columnlistview.git",
+            "keywords": [
+                "ListView",
+                "circulon",
+                "column",
+                "columns",
+                "list view",
+                "responsive",
+                "yii",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2015-06-28T12:49:52+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -2476,6 +2654,96 @@
             "time": "2019-01-21T22:06:44+00:00"
         },
         {
+            "name": "nerburish/yii2-masonry-asset",
+            "version": "1.02",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nerburish/yii2-masonry-asset.git",
+                "reference": "51239a04cc37b3d11ab94090274a10ce3b04cdcf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nerburish/yii2-masonry-asset/zipball/51239a04cc37b3d11ab94090274a10ce3b04cdcf",
+                "reference": "51239a04cc37b3d11ab94090274a10ce3b04cdcf",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery-masonry": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "nerburish\\masonry\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nerburish",
+                    "email": "nerburish@hotmail.com"
+                }
+            ],
+            "description": "Simple asset bundle for masonry.js (http://masonry.desandro.com/)",
+            "keywords": [
+                "asset",
+                "extension",
+                "jquery",
+                "masonry",
+                "yii2"
+            ],
+            "time": "2018-02-01T15:12:54+00:00"
+        },
+        {
+            "name": "nerburish/yii2-masonry-view",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nerburish/yii2-masonry-view.git",
+                "reference": "bb960ebf04c7ebd3edec9f52e5edce965f89b5d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nerburish/yii2-masonry-view/zipball/bb960ebf04c7ebd3edec9f52e5edce965f89b5d6",
+                "reference": "bb960ebf04c7ebd3edec9f52e5edce965f89b5d6",
+                "shasum": ""
+            },
+            "require": {
+                "nerburish/yii2-masonry-asset": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "nerburish\\masonryview\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nerburish",
+                    "email": "nerburish@hotmail.com"
+                }
+            ],
+            "description": "ListView widget improved to use Masonry (http://masonry.desandro.com/)",
+            "keywords": [
+                "ListView",
+                "dataprovider",
+                "extension",
+                "masonry",
+                "view",
+                "widget",
+                "yii2"
+            ],
+            "time": "2017-02-18T08:12:15+00:00"
+        },
+        {
             "name": "npm-asset/acorn",
             "version": "4.0.13",
             "dist": {
@@ -4296,7 +4564,7 @@
             "version": "v1.0.8",
             "source": {
                 "type": "git",
-                "url": "git@github.com:calvinmetcalf/process-nextick-args.git",
+                "url": "https://github.com/calvinmetcalf/process-nextick-args.git",
                 "reference": "07f531b2e7b3587f1c6cbce3f83054f50aa5cc97"
             },
             "dist": {

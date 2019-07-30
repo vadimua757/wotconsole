@@ -14,8 +14,12 @@ $formatter = Yii::$app->formatter;
             <?= $model->name ?>
         <br>
             <?= $model->type ?>
-            <?= $model->price_xp ?>
-            <?= $model->price_credit ?>
+            <?php if($model->price_xp){
+                echo $formatter->asInteger($model->price_xp);
+            } ?>
+            <?php if ($model->price_credit) {
+               echo $formatter->asInteger($model->price_credit);
+            } ?>
     </span>
 </button>
 
