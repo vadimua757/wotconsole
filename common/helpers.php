@@ -108,6 +108,9 @@ function getNationImage($nation){
         case 'usa';
             $img = "//wxpcdn.gcdn.co/static/89e7685/portal/img/nation-flags/usa_r_color.png";
             break;
+        case 'germany';
+            $img = "//wxpcdn.gcdn.co/static/89e7685/portal/img/nation-flags/germany_r_color.png";
+            break;
         case 'uk';
             $img = "//wxpcdn.gcdn.co/static/89e7685/portal/img/nation-flags/uk_r_color.png";
             break;

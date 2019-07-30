@@ -28,11 +28,6 @@ $this->title = Yii::$app->name;
     </div>
 
     <div class="body-content">
-<?php
-        $url = 'https://api-ps4-console.worldoftanks.com/wotx/encyclopedia/vehicles/?application_id=a9953a033483028e8f55458638a022a3&tier=9&language=ru&tank_id=1841';
-        $tanks = Tanks::CurlPOST($url, null);
 
-        var_dump($tanks)
-?>
     </div>
 </div>

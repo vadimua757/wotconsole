@@ -58,7 +58,10 @@
     "miloschuman/yii2-highcharts-widget": "v7.0",
     "loveorigami/yii2-modal-ajax": "3.7",
     "kartik-v/yii2-number": "1.0.x-dev",
-    "2amigos/yii2-highcharts-widget": "1.0.3"
+    "2amigos/yii2-highcharts-widget": "1.0.3",
+    "nerburish/yii2-masonry-view": "1.0.0",
+    "circulon/yii2-columnlistview": "v1.0.0",
+    "tustin/psn-php": "^2.1"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "^2.0.0",

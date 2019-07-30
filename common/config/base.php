@@ -36,7 +36,11 @@ $config = [
         ],
 
         'formatter' => [
-            'class' => yii\i18n\Formatter::class
+            'class' => yii\i18n\Formatter::class,
+            'locale' => 'ru', //ej. 'es-ES'
+           'thousandSeparator' => ' ',
+           'decimalSeparator' => ',',
+           'currencyCode' => 'UAH',
         ],
 
         'glide' => [
@@ -156,7 +160,7 @@ $config = [
             'name' => Yii::$app->name, // optional, uses Yii::$app->name by default
 //            'handler' => 'class/name', // optional, your custom handler
             'licence' => 'eu01xx900c8d5c94a8ec1b053157745a813297a0', // optional
-//            'enabled' => true // optional, default = true
+            'enabled' => false // optional, default = true
         ],
     ],
     'params' => [

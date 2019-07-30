@@ -10,6 +10,7 @@ use common\models\Tanks;
 use Yii;
 use yii\data\SqlDataProvider;
 use yii\data\ActiveDataProvider;
+use yii\helpers\Json;
 
 class TanksController extends \yii\web\Controller
 {
@@ -71,11 +72,19 @@ class TanksController extends \yii\web\Controller
         if (Yii::$app->request->isAjax){
             return $this->renderAjax('_content', [
                 'item' => $tank,
-                'package' => $package,
+//                'package' => $package,
                 'dataProvider' => $packagess,
-//                'dataProvider' => $models,
                 ]);
         }
         return null;
+    }
+
+    public function actionGetpackage($id)
+    {
+        $package = Packagess::findOne($id);
+        $html = $this->renderPartial('_package', [
+            'package' => $package,
+        ]);
+        return Json::encode($html);
     }
 }

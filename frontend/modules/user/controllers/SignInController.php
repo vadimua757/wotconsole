@@ -359,4 +359,12 @@ class SignInController extends \yii\web\Controller
 
         throw new Exception('OAuth error');
     }
+
+    /**
+     * @return string|Response
+     */
+    public function actionPsnSignup()
+    {
+
+    }
 }

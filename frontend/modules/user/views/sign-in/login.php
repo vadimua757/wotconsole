@@ -38,6 +38,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
                 <h2><?php echo Yii::t('frontend', 'Log in with')  ?>:</h2>
                 <div class="form-group">
+                    <div class="ps-login">
+                        <?php echo Yii::t('frontend', 'Login with PSN', [
+                            'link'=>yii\helpers\Url::to(['sign-in/psnlogin'])
+                        ]) ?>
+                    </div>
                     <?php $authAuthChoice = yii\authclient\widgets\AuthChoice::begin([
                                     'baseAuthUrl' => ['site/auth']
                                 ]); ?>

@@ -8,6 +8,7 @@ use common\models\search\TanksSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use GuzzleHttp\Client;
 
 /**
  * TanksController implements the CRUD actions for Tanks model.
@@ -47,6 +48,7 @@ class TanksController extends Controller
      * Displays a single Tanks model.
      * @param integer $id
      * @return mixed
+     * @throws NotFoundHttpException
      */
     public function actionView($id)
     {
@@ -126,7 +128,9 @@ class TanksController extends Controller
 
 //        Yii::$app->db->createCommand()->truncateTable('tanks')->execute();
 
-        $tanks_ru = CurlPOST($url_ru, null);
+        $client = New Client();
+        $request = $client->get($url_ru);
+        $tanks_ru = json_decode($request->getBody()->getContents(), true);
 
         $tank_count = 0;
         $tank_names = '';

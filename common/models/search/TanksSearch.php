@@ -72,7 +72,7 @@ class TanksSearch extends Tanks
             ->andFilterWhere(['like', 'short_name_en', $this->short_name_en])
             ->andFilterWhere(['like', 'short_name_ru', $this->short_name_ru])
             ->andFilterWhere(['like', 'tag', $this->tag])
-            ->andFilterWhere(['like', 'type', $this->type])
+            ->andFilterWhere(['=', 'type', $this->type])
             ->andFilterWhere(['like', 'images', $this->images]);
 
         return $dataProvider;

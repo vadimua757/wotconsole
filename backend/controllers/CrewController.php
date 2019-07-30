@@ -133,7 +133,7 @@ class CrewController extends Controller
             $crew = new Crew();
             $crew->short_name = $crew_key;
             $crew->description_ru = htmlspecialchars($crew_data['description']);
-            $crew->skill_name = $crew_data['skill_name'];
+            $crew->skill_name = $crew_data['name'];
             $crew->is_perk = $crew_data['is_perk'];
             $crew->images = serialize($crew_data['images']);
             $crew->name_ru = htmlspecialchars($crew_data['name']);

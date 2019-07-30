@@ -200,4 +200,15 @@ class PackageController extends Controller
         }
         return $this->redirect(['index']);
     }
+
+    public function actionGet() :void
+    {
+        $tanks = Tanks::find()->all();
+        foreach ($tanks as $tank) {
+            try {
+                $this->actionSave($tank->attributes['tank_id']);
+            } catch (\Exception $exception)
+            {Yii::$app->session->setFlash('danger', $exception->getMessage());}
+        }
+    }
 }
